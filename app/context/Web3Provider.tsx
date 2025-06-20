@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 
 import '@rainbow-me/rainbowkit/styles.css';
 import { getDefaultConfig, RainbowKitProvider, darkTheme, lightTheme } from '@rainbow-me/rainbowkit';
@@ -11,7 +11,7 @@ const config = getDefaultConfig({
   appName: 'solid-nextjs',
   projectId: 'example_project_id_123456', // Valor de ejemplo, reemplaza por el tuyo en producción
   chains: [mainnet, sepolia],
-  ssr: true,
+  ssr: false,
 });
 const queryClient = new QueryClient();
 
