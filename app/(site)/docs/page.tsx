@@ -6,14 +6,14 @@ import BootstrapTemplate from '../../../markdown/docs/bootstrap-template.mdx';
 import ContactForm from '../../../markdown/docs/contact-form.mdx';
 import StyleGuide from '../../../markdown/docs/style-guide.mdx';
 import TailwindComponent from '../../../markdown/docs/tailwind-component.mdx';
-import TailwindTemplate from '../../../markdown/docs/tailwind-template.mdx';
+import About from '../../../markdown/docs/about.mdx';
 
 const docs = [
   { title: "Bootstrap Template", Component: BootstrapTemplate, slug: "bootstrap-template" },
   { title: "Contact Form", Component: ContactForm, slug: "contact-form" },
   { title: "Style Guide", Component: StyleGuide, slug: "style-guide" },
   { title: "Tailwind Component", Component: TailwindComponent, slug: "tailwind-component" },
-  { title: "Tailwind Template", Component: TailwindTemplate, slug: "tailwind-template" },
+  { title: "About Us", Component: About, slug: "about" },
 ];
 
 export default function DocsPage() {
