@@ -7,11 +7,13 @@ import ScrollToTop from "@/components/ScrollToTop";
 import {ThemeProvider} from "next-themes";
 import {Inter} from "next/font/google";
 import "../globals.css";
-import Web3Provider from "../context/Web3Provider";
+import ToasterContext from "../context/ToastContext";
+import dynamic from "next/dynamic";
 
 const inter = Inter({subsets: ["latin"]});
 
-import ToasterContext from "../context/ToastContext";
+// Dynamically import the client-only Web3Provider wrapper
+const AppWeb3Wrapper = dynamic(() => import("../context/AppWeb3Wrapper"), { ssr: false });
 
 export default function RootLayout({
                                        children,
@@ -26,14 +28,14 @@ export default function RootLayout({
             attribute="class"
             defaultTheme="dark"
         >
-            <Web3Provider>
                 <Lines/>
-                <Header/>
                 <ToasterContext/>
-                {children}
-                <Footer/>
+                <AppWeb3Wrapper>
+                    <Header/>
+                    {children}
+                    <Footer/>
+                </AppWeb3Wrapper>
                 <ScrollToTop/>
-            </Web3Provider>
         </ThemeProvider>
         </body>
         </html>
