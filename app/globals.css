@@ -223,3 +223,22 @@ pre {
 .active-tab {
   @apply bg-stroke text-black dark:bg-blackho dark:text-white;
 }
+
+.docs-mdx, .docs-mdx p, .docs-mdx li, .docs-mdx ul, .docs-mdx ol, .docs-mdx h1, .docs-mdx h2, .docs-mdx h3, .docs-mdx h4, .docs-mdx h5, .docs-mdx h6 {
+  color: #181c31;
+}
+
+.dark .docs-mdx, 
+.dark .docs-mdx p strong, 
+.dark .docs-mdx p,
+.dark .docs-mdx li, 
+.dark .docs-mdx ul, 
+.dark .docs-mdx ol, 
+.dark .docs-mdx h1, 
+.dark .docs-mdx h2, 
+.dark .docs-mdx h3, 
+.dark .docs-mdx h4, 
+.dark .docs-mdx h5, 
+.dark .docs-mdx h6 {
+  color: #fff;
+}

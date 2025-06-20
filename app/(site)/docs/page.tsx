@@ -2,14 +2,14 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import BootstrapTemplate from '../../../markdown/docs/bootstrap-template.mdx';
+import BootstrapTemplate from '../../../markdown/docs/nutridao-roadmap.mdx';
 import ContactForm from '../../../markdown/docs/contact-form.mdx';
 import StyleGuide from '../../../markdown/docs/style-guide.mdx';
 import TailwindComponent from '../../../markdown/docs/tailwind-component.mdx';
 import About from '../../../markdown/docs/about.mdx';
 
 const docs = [
-  { title: "Bootstrap Template", Component: BootstrapTemplate, slug: "bootstrap-template" },
+  { title: "Roadmap", Component: BootstrapTemplate, slug: "nutridao-roadmap" },
   { title: "Contact Form", Component: ContactForm, slug: "contact-form" },
   { title: "Style Guide", Component: StyleGuide, slug: "style-guide" },
   { title: "Tailwind Component", Component: TailwindComponent, slug: "tailwind-component" },
@@ -64,7 +64,7 @@ function DocsPageContent() {
 
             {/* Main Content */}
             <div className="w-full px-4 lg:w-3/4">
-              <div className="blog-details blog-details-docs shadow-three dark:bg-gray-dark rounded-xs bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
+              <div className="blog-details blog-details-docs docs-mdx shadow-three dark:bg-gray-dark rounded-xs bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
                 <h2 className="text-2xl font-semibold mb-4">{docs[activeIdx].title}</h2>
                 <ActiveDoc />
               </div>
