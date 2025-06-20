@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import BootstrapTemplate from '../../../markdown/docs/bootstrap-template.mdx';
 import ContactForm from '../../../markdown/docs/contact-form.mdx';
@@ -16,7 +16,7 @@ const docs = [
   { title: "About Us", Component: About, slug: "about" },
 ];
 
-export default function DocsPage() {
+function DocsPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [activeIdx, setActiveIdx] = useState(0);
@@ -72,5 +72,13 @@ export default function DocsPage() {
           </div>
         </div>
       </section>
+  );
+}
+
+export default function DocsPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DocsPageContent />
+    </Suspense>
   );
 }
