@@ -4,13 +4,43 @@ import '@rainbow-me/rainbowkit/styles.css';
 import { getDefaultConfig, RainbowKitProvider, darkTheme, lightTheme } from '@rainbow-me/rainbowkit';
 import { WagmiProvider } from 'wagmi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { mainnet, sepolia } from 'wagmi/chains';
 import { ReactNode } from 'react';
+
+// Custom VANA Moksha Testnet chain definition
+export const mokshaTestnet = {
+  id: 14800,
+  name: "VANA - Moksha",
+  network: "vana-moksha",
+  nativeCurrency: {
+    name: "VANA",
+    symbol: "VANA",
+    decimals: 18,
+  },
+  rpcUrls: {
+    default: {
+      http: [process.env.NEXT_PUBLIC_RPC_URL || "https://rpc.moksha.vana.org"],
+    },
+    public: {
+      http: [process.env.NEXT_PUBLIC_RPC_URL || "https://rpc.moksha.vana.org"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      url: "https://moksha.vanascan.io",
+      name: "VANAScan",
+    },
+    etherscan: {
+      url: "https://moksha.vanascan.io",
+      name: "VANAScan",
+    },
+  },
+  testnet: true,
+};
 
 const config = getDefaultConfig({
   appName: 'solid-nextjs',
   projectId: 'example_project_id_123456', // Valor de ejemplo, reemplaza por el tuyo en producción
-  chains: [mainnet, sepolia],
+  chains: [mokshaTestnet],
   ssr: false,
 });
 const queryClient = new QueryClient();
