@@ -3,16 +3,10 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import BootstrapTemplate from '../../../markdown/docs/nutridao-roadmap.mdx';
-import ContactForm from '../../../markdown/docs/contact-form.mdx';
-import StyleGuide from '../../../markdown/docs/style-guide.mdx';
-import TailwindComponent from '../../../markdown/docs/tailwind-component.mdx';
 import About from '../../../markdown/docs/about.mdx';
 
 const docs = [
   { title: "Roadmap", Component: BootstrapTemplate, slug: "nutridao-roadmap" },
-  { title: "Contact Form", Component: ContactForm, slug: "contact-form" },
-  { title: "Style Guide", Component: StyleGuide, slug: "style-guide" },
-  { title: "Tailwind Component", Component: TailwindComponent, slug: "tailwind-component" },
   { title: "About Us", Component: About, slug: "about" },
 ];
 
