@@ -13,7 +13,7 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "Core Features of NutriDAO",
+              title: "Core Features",
               subtitle: "What Powers NutriDAO",
               description: `Six pillars that power our decentralized nutritional data ecosystem`,
             }}
