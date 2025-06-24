@@ -37,6 +37,7 @@ const About = () => {
               <Image
                 src="/images/about/about-dark-01.gif"
                 alt="About"
+                unoptimized
                 className="hidden dark:block"
                 fill
               />
