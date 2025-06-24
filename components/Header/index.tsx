@@ -159,7 +159,7 @@ const Header = () => {
             <ThemeToggler />
 
             <Link
-              href="https://github.com/DataChain-Collective/nutridao-frontend"
+              href="https://github.com/DataChain-Collection/nutridao-frontend"
               className="text-regular font-medium text-waterloo hover:text-primary"
             >
               GitHub Repo 🌟
