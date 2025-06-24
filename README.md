@@ -47,9 +47,9 @@ For the full roadmap, see [NutriDAO Roadmap](markdown/docs/nutridao-roadmap.mdx)
 
 - [About NutriDAO](markdown/docs/about.mdx)
 - [NutriDAO Roadmap](markdown/docs/nutridao-roadmap.mdx)
-- [Docs Page](app/(site)/docs/page.tsx)
-- [Support](app/(site)/support/page.tsx)
-- [Blog](app/(site)/blog/page.tsx)
+<!-- - [Docs Page](app/(site)/docs/page.tsx) -->
+<!-- - [Support](app/(site)/support/page.tsx) -->
+<!-- - [Blog](app/(site)/blog/page.tsx) -->
 
 ---
 
