@@ -32,7 +32,7 @@ const Hero = () => {
               <div className="mt-10">
                 <form onSubmit={handleSubmit}>
                   <div className="flex flex-wrap gap-5">
-                    <Link href="/docs?doc=nutridao-roadmap" passHref legacyBehavior>
+                    <Link href="/docs?doc=nutridao-roadmap" passHref>
                       <button
                         aria-label="get started button"
                         className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho cursor-pointer"
