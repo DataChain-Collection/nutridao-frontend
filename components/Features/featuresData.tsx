@@ -3,21 +3,21 @@ import { Feature } from "@/types/feature";
 const featuresData: Feature[] = [
   {
     id: 1,
-    icon: "/images/icon/icon-02.svg",
+    icon: "/images/icon/icon-fhir-network.svg",
     title: "FHIR-Backed Interoperability",
     description:
       "Built on OpenFHIRChain, NutriDAO ensures full compatibility with HL7 FHIR standards, enabling integration with existing EHR/EMR systems and health apps.",
   },
   {
     id: 2,
-    icon: "/images/icon/icon-02.svg",
+    icon: "/images/icon/icon-user-shield.svg",
     title: "User-Centric Data Ownership",
     description:
       "Participants retain full control over the data they contribute. Consent, visibility, and monetization are all transparent and governed by the user.",
   },
   {
     id: 3,
-    icon: "/images/icon/icon-02.svg",
+    icon: "/images/icon/icon-ipfs-cube.svg",
     title: "Supplement Metadata on IPFS",
     description:
       "Each supplement entry is stored off-chain on IPFS, hashed and verifiable, reducing gas fees and enhancing traceability and trust.",
@@ -31,14 +31,14 @@ const featuresData: Feature[] = [
   },
   {
     id: 5,
-    icon: "/images/icon/icon-02.svg",
+    icon: "/images/icon/icon-token-coin.svg",
     title: "Ethical Token Incentives",
     description:
       "Contributors are rewarded for high-quality, validated data via community-driven tokenomics aligned with the Vana ecosystem.",
   },
   {
     id: 6,
-    icon: "/images/icon/icon-02.svg",
+    icon: "/images/icon/icon-consent-shield.svg",
     title: "Consent-Based Data Pooling",
     description:
       "All contributed data feeds into a privacy-preserving pool, accessible only through user-approved queries. This enables ethical AI training and research collaborations.",
